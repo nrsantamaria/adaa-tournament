@@ -33,9 +33,10 @@ You will need the following things properly installed on your computer.
 ## Firebase Integration
 
 * Create a firebase account at `https://firebase.google.com`
-* Add a new project to your firebase account
-* Create a file in the app folder labeled api-keys.ts
-* Add the following to your api-keys file:
+* Add a new project to your firebase account.
+* Update the rules to allow read and write to be true.
+* Create a file in the projects app folder labeled api-keys.ts
+* Add the following to your api-keys file which you will receive when you click on the button "Add Firebase to your web app" within your firebase project:
 
 ```
 export var masterFirebaseConfig = {
@@ -47,7 +48,9 @@ export var masterFirebaseConfig = {
   };
 ```
 
-* User authentication is enabled for the admin route. Be sure to turn on the email sign in method and add a user under the users tab.
+* User authentication is enabled for the admin route on this project. Within the authentication section of your project complete the following:
+* Under the sign in tab, enable the email/password sign in method
+* Under the users tab, and add a user which will be the admin account
 
 ## Development server
 
