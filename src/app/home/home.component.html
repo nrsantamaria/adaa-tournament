@@ -1,19 +1,14 @@
 <div *ngFor="let team of teams | async" class="panel panel-default">
-  <div class="panel-heading">
-    <h3><em>{{team.name}}</em></h3>
-  </div>
   <div class="panel-body">
     <div class="col-md-6">
       <img src="{{team.photo}}"/>
       <br>
     </div>
     <div class="col-md-6">
-      <h4>Rank:</h4>
-      <p>{{team.rank}}</p>
-      <h4>Location:</h4>
-      <p>{{team.location}}</p>
-      <h4>Team Color:</h4>
-      <p>{{team.teamColor}}</p>
+      <h2>{{team.name}}</h2>
+      <p><strong>Rank:</strong> {{team.rank}}</p>
+      <p><strong>Location:</strong> {{team.location}}</p>
+      <p><strong>Team Color:</strong> {{team.teamColor}}</p>
     </div>
   </div>
 </div>

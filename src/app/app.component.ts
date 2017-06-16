@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ADAA Tournament';
+  header = 'American Dodgeball Association of America'
+  title = 'Championship Tournament';
   slogan = "Just remember the five D's of dodgeball: Dodge, Duck, Dip, Dive and... Dodge."
 }
