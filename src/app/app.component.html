@@ -42,7 +42,7 @@
     <input #email>
     <label>Password</label>
     <input type="password" #password>
-    <button class="btn btn-default" (click)="login(email.value, password.value)" routerLink="admin">Admin Login</button>
+    <button class="btn btn-default" (click)="login(email.value, password.value); email.value=''; password.value='';" routerLink="admin">Admin Login</button>
     <button class="btn btn-default" (click)="logout()" routerLink="">Admin Logout</button>
   </div>
 </footer>
