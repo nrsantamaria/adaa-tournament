@@ -53,7 +53,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Useful Tips
 
 * To review content in atom with TypeScript Package install the following: `apm install atom-typescript`
-* If you receive the following error: Error: Can't resolve 'promise-polyfill', Run `npm install promise-polyfill --save-exact
+* If you receive the following error: Error: Can't resolve 'promise-polyfill', Run `npm install promise-polyfill --save-exact`
 * If you get some other weird firebase related error use the following to find out what file is out of date. Run `npm list`
 
 ## Support and Contact Details
