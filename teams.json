@@ -1,0 +1,56 @@
+{
+  "teams": [{
+    "name": "Average Joe's",
+    "rank": "Division 1: 1",
+    "description": "Team of misfits. Team moto: 'Aim Low'",
+    "location": "Average Joe's Gym",
+    "numberOfPlayers": 5,
+    "photo": "http://4.bp.blogspot.com/-vYXyI1-CCgw/U2F5_al4N5I/AAAAAAAALIU/_R9aQeSIbxU/s1600/Dodgeball+movie+2004+cast.jpg",
+    "teamColor": "Gold & Red"
+  },
+  {
+    "name": "Globo Gym Purple Cobras",
+    "rank": "Division 1: 2",
+    "description": "Genetically Engineered Juicers",
+    "location": "Globo Gym",
+    "numberOfPlayers": 6,
+    "photo": "https://s-media-cache-ak0.pinimg.com/originals/20/6e/1c/206e1c60c45ae3864aa499e83a94af0d.jpg",
+    "teamColor": "Purple & Black"
+  },
+  {
+    "name": "Skillz That Killz",
+    "rank": "Division 1: 5",
+    "description": "The inner-city champions.",
+    "location": "Globo Gym",
+    "numberOfPlayers": 6,
+    "photo": "http://s688.photobucket.com/user/anthonybuhler71688/media/skillz%20that%20killz/Untitled.jpg.html][IMG]http://i688.photobucket.com/albums/vv243/anthonybuhler71688/skillz%20that%20killz/Untitled.jpg",
+    "teamColor": "Baby Blue"
+  },
+  {
+    "name": "Lumberjacks",
+    "rank": "Division 1: 3",
+    "description": "We chop wood. We slice balls.",
+    "location": "Lumber liquidator Gym",
+    "numberOfPlayers": 6,
+    "photo": "https://i0.wp.com/carolramsey.net/newsite/wp-content/uploads/2015/09/20_Lumberjacks.jpg",
+    "teamColor": "Green & Red"
+  },
+  {
+    "name": "Team Blitzkrieg",
+    "rank": "Division 1: 4",
+    "description": "The European champions.",
+    "location": "Fitnessstudio",
+    "numberOfPlayers": 6,
+    "photo": "http://klipd.com/screenshots/59152a507f494e8128537deb41d55847-0.jpg",
+    "teamColor": "Red"
+  },
+  {
+    "name": "Kamikazes",
+    "rank": "Division 1: 6",
+    "description": "Team logo: 'Coming in hot.'",
+    "location": "Marriott Gym",
+    "numberOfPlayers": 6,
+    "photo": "http://cdn.hark.com/images/000/945/542/945542/original.jpg",
+    "teamColor": "Red & White"
+  }]
+}
