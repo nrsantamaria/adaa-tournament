@@ -1,0 +1,64 @@
+<div *ngIf="editForm" class="edit-team">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Edit Team</h3>
+    </div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label>Team Name:</label>
+        <input class="form-control" [(ngModel)]="selectedTeam.name">
+      </div>
+      <div class="form-group">
+        <label>Team Rank:</label>
+        <select class="form-control"[(ngModel)]="selectedTeam.rank">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Team Description:</label>
+        <textarea class="form-control" [(ngModel)]="selectedTeam.description"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Team Location:</label>
+        <input class="form-control" [(ngModel)]="selectedTeam.location">
+      </div>
+      <div class="form-group">
+        <label>Number of Players:</label>
+        <select class="form-control"[(ngModel)]="selectedTeam.numberOfPlayers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Team Photo URL:</label>
+        <input class="form-control" [(ngModel)]="selectedTeam.photo">
+      </div>
+      <div class="form-group">
+        <label>Team Color:</label>
+        <input class="form-control" [(ngModel)]="selectedTeam.teamColor">
+      </div>
+      <div class="form-group">
+        <label>Team Logo URL:</label>
+        <input class="form-control" [(ngModel)]="selectedTeam.logo">
+      </div>
+      <br>
+      <button class="btn btn-success" (click)="beginUpdatingTeam(selectedTeam)">Edit</button>
+      <hr>
+      <button class="btn btn-danger" (click)="beginDeletingTeam(selectedTeam)">Delete</button>
+    </div>
+  </div>
+</div>
+<div *ngIf="formButton">
+  <button class="btn btn-default" (click)="showForm()">Edit Team</button>
+</div>

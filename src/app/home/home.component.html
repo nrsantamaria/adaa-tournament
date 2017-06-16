@@ -10,6 +10,11 @@
       <p><strong>Location:</strong> {{team.location}}</p>
       <p><strong>Team Color:</strong> {{team.teamColor}}</p>
       <button (click)="goToTeamDetail(team)" class="btn btn-danger">Click Here to See More Details</button>
+      <br>
+      <br>
+      <div *ngIf="currentRoute === '/admin'">
+        <app-edit-team [selectedTeam]="team"></app-edit-team>
+      </div>
     </div>
   </div>
 </div>

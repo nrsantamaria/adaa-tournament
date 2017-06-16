@@ -21,4 +21,22 @@ export class TeamService {
   addTeam(newTeam: Team) {
     this.teams.push(newTeam);
   }
+
+  editTeam(selectedTeam){
+    var firebaseTeamToEdit = this.getTeamById(selectedTeam.$key);
+    firebaseTeamToEdit.update({name: selectedTeam.name,
+      rank: selectedTeam.rank,
+      description: selectedTeam.description,
+      location: selectedTeam.location,
+      numberOfPlayers: selectedTeam.numberOfPlayers,
+      photo: selectedTeam.photo,
+      teamColor: selectedTeam.teamColor,
+      logo: selectedTeam.logo,
+    });
+  }
+
+  deleteTeam(localTeam){
+    var firebaseTeamToDelete = this.getTeamById(localTeam.$key);
+    firebaseTeamToDelete.remove();
+  }
 }

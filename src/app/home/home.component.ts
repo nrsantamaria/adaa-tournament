@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 
 export class HomeComponent implements OnInit {
   teams: FirebaseListObservable<any[]>
+  currentRoute: string = this.router.url;
 
   constructor(
     private router: Router,
