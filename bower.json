@@ -1,0 +1,20 @@
+{
+  "name": "adaa-tournament",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Nicole Santamaria <nicolersantamaria@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
