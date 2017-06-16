@@ -9,7 +9,7 @@
 * As a user, I'd like the option to visit an "About" page that explains what the tournament is, and what they do.
 * As a user, I'd like all data persisted in a database, so it's always there when I need it.
 * As a user, I'd like to filter the list of teams by their rank.
-* As an administrator, I want to add new users to the association. (User authentication is not required).
+* As an administrator, I want to add new users to the association. (User authentication is established).
 * As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details.
 * As an administrator, need the option to delete a team, in case they leave the association.
 

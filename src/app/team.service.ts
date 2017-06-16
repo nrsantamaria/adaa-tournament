@@ -17,4 +17,8 @@ export class TeamService {
   getTeamById(teamId: string){
     return this.database.object('teams/' + teamId);
   }
+
+  addTeam(newTeam: Team) {
+    this.teams.push(newTeam);
+  }
 }

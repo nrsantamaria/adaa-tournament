@@ -1,0 +1,77 @@
+<div *ngIf="teamForm" class="new-team">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add New Team to Tournament</h3>
+    </div>
+    <div class="panel-body">
+      <div>
+        <div>
+          <label>Team Name:</label>
+          <br>
+          <input class="form-control" #newName>
+        </div>
+
+        <div class="form-group">
+          <label>Team Rank:</label>
+          <select class="form-control" #newRank>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Team Description:</label>
+          <br>
+          <textarea class="form-control" #newDescription></textarea>
+        </div>
+
+        <div>
+          <label>Team Location:</label>
+          <br>
+          <input class="form-control" #newLocation>
+        </div>
+
+        <div class="form-group">
+          <label>Number of Players:</label>
+          <select class="form-control" #newNumberOfPlayers>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Team Photo URL:</label>
+          <br>
+          <input class="form-control" #newPhoto>
+        </div>
+
+        <div>
+          <label>Team Color:</label>
+          <br>
+          <input class="form-control" #newColor>
+        </div>
+
+        <div>
+          <label>Team Logo URL:</label>
+          <br>
+          <input class="form-control" #newLogo>
+        </div>
+        <br>
+        <button class="btn btn-success" (click)="submitForm(newName.value, newRank.value, newDescription.value, newLocation.value, newNumberOfPlayers.value, newPhoto.value, newColor.value, newLogo.value); newName.value = ''; newDescription.value = ''; newLocation.value = ''; newPhoto.value = ''; newColor.value = ''; newLogo.value = '';">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="formButton">
+  <button class="btn btn-info" (click)="showForm()">Add New Team</button>
+</div>

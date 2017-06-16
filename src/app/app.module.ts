@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { TeamDetailComponent } from './team-detail/team-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { NewTeamComponent } from './new-team/new-team.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     HomeComponent,
     AboutComponent,
     TeamDetailComponent,
-    AdminComponent
+    AdminComponent,
+    NewTeamComponent
   ],
   imports: [
     BrowserModule,
