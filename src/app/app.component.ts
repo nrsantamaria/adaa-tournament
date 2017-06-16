@@ -10,7 +10,7 @@ import * as firebase from 'firebase/app';
   providers: [AngularFireAuth]
 })
 export class AppComponent {
-  header = 'American Dodgeball Association of America'
+  header = 'AMERICAN DODGEBALL ASSOCIATION OF AMERICA'
   title = 'Championship Tournament';
 
   user: Observable<firebase.User>;
