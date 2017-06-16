@@ -17,6 +17,7 @@ import { TeamDetailComponent } from './team-detail/team-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { NewTeamComponent } from './new-team/new-team.component';
 import { EditTeamComponent } from './edit-team/edit-team.component';
+import { RankPipe } from './rank.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,7 +34,8 @@ export const firebaseConfig = {
     TeamDetailComponent,
     AdminComponent,
     NewTeamComponent,
-    EditTeamComponent
+    EditTeamComponent,
+    RankPipe
   ],
   imports: [
     BrowserModule,

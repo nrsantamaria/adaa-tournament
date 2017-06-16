@@ -7,11 +7,13 @@
 
 .jumbotron {
   margin-bottom: 0 !important;
+}
+
+.jumbotron h1, h3 {
   padding-left: 3%;
 }
 
 .carousel, .carousel-inner, .sponsor {
-  height: 200px !important;
   width: 250px;
 }
 

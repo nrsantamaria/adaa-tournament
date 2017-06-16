@@ -1,4 +1,14 @@
-<div *ngFor="let team of teams | async" class="panel panel-default">
+<select class="form-control" (change)="onChange($event.target.value)">
+  <option value="1">Rank: 1</option>
+  <option value="2">Rank: 2</option>
+  <option value="3">Rank: 3</option>
+  <option value="4">Rank: 4</option>
+  <option value="5">Rank: 5</option>
+  <option value="6">Rank: 6</option>
+  <option value="all" selected>All Teams</option>
+</select>
+<br>
+<div *ngFor="let team of teams | async | rank:filterBy" class="panel panel-default">
   <div class="panel-body">
     <div class="col-md-6">
       <img class="img-circle img-responsive" src="{{team.logo}}"/>

@@ -27,4 +27,10 @@ export class HomeComponent implements OnInit {
   goToTeamDetail(clickedTeam){
     this.router.navigate(['teams', clickedTeam.$key])
   };
+
+  filterBy: string = "all"
+
+  onChange(menuOption) {
+   this.filterBy = menuOption;
+  }
 }
