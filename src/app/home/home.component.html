@@ -1,7 +1,7 @@
 <div *ngFor="let team of teams | async" class="panel panel-default">
   <div class="panel-body">
     <div class="col-md-6">
-      <img src="{{team.photo}}"/>
+      <img class="img-circle img-responsive" src="{{team.logo}}"/>
       <br>
     </div>
     <div class="col-md-6">
@@ -9,6 +9,7 @@
       <p><strong>Rank:</strong> {{team.rank}}</p>
       <p><strong>Location:</strong> {{team.location}}</p>
       <p><strong>Team Color:</strong> {{team.teamColor}}</p>
+      <button (click)="goToTeamDetail(team)" class="btn btn-danger">Click Here to See More Details</button>
     </div>
   </div>
 </div>

@@ -6,7 +6,8 @@
     "location": "Average Joe's Gym",
     "numberOfPlayers": 5,
     "photo": "http://4.bp.blogspot.com/-vYXyI1-CCgw/U2F5_al4N5I/AAAAAAAALIU/_R9aQeSIbxU/s1600/Dodgeball+movie+2004+cast.jpg",
-    "teamColor": "Gold & Red"
+    "teamColor": "Gold & Red",
+    "logo": "http://pre10.deviantart.net/a30b/th/pre/f/2011/186/d/2/average_joe__s_gymnasium_by_lytjan-d3l2ukl.jpg"
   },
   {
     "name": "Globo Gym Purple Cobras",
@@ -15,7 +16,8 @@
     "location": "Globo Gym",
     "numberOfPlayers": 6,
     "photo": "https://s-media-cache-ak0.pinimg.com/originals/20/6e/1c/206e1c60c45ae3864aa499e83a94af0d.jpg",
-    "teamColor": "Purple & Black"
+    "teamColor": "Purple & Black",
+    "logo": "https://ih1.redbubble.net/image.147663195.3771/flat,800x800,075,f.jpg"
   },
   {
     "name": "Skillz That Killz",
@@ -24,7 +26,8 @@
     "location": "Tha Streetz",
     "numberOfPlayers": 6,
     "photo": "https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/20121249156.jpg",
-    "teamColor": "Baby Blue"
+    "teamColor": "Baby Blue",
+    "logo": "http://zaslike.com/files/1wwsa0g1qhxng2c02sfm.png"
   },
   {
     "name": "Lumberjacks",
@@ -33,7 +36,8 @@
     "location": "Lumber liquidator Gym",
     "numberOfPlayers": 6,
     "photo": "https://i0.wp.com/carolramsey.net/newsite/wp-content/uploads/2015/09/20_Lumberjacks.jpg",
-    "teamColor": "Green & Red"
+    "teamColor": "Green & Red",
+    "logo": "https://s-media-cache-ak0.pinimg.com/originals/22/cd/e7/22cde792fd91ebb8403380bad08b021c.png"
   },
   {
     "name": "Team Blitzkrieg",
@@ -42,7 +46,8 @@
     "location": "Fitnessstudio",
     "numberOfPlayers": 6,
     "photo": "http://klipd.com/screenshots/59152a507f494e8128537deb41d55847-0.jpg",
-    "teamColor": "Red"
+    "teamColor": "Red",
+    "logo": "http://www.crwflags.com/fotw/images/d/de!eur08.gif"
   },
   {
     "name": "Kamikazes",
@@ -51,6 +56,7 @@
     "location": "Marriott Gym",
     "numberOfPlayers": 6,
     "photo": "http://cdn.hark.com/images/000/945/542/945542/original.jpg",
-    "teamColor": "Red & White"
+    "teamColor": "Red & White",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/War_flag_of_the_Imperial_Japanese_Army.svg/1280px-War_flag_of_the_Imperial_Japanese_Army.svg.png"
   }]
 }

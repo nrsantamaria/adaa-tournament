@@ -14,10 +14,16 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class HomeComponent implements OnInit {
   teams: FirebaseListObservable<any[]>
 
-  constructor(private router: Router, private teamService: TeamService) { }
+  constructor(
+    private router: Router,
+    private teamService: TeamService
+  ) { }
 
   ngOnInit() {
     this.teams = this.teamService.getTeams();
   }
 
+  goToTeamDetail(clickedTeam){
+    this.router.navigate(['teams', clickedTeam.$key])
+  };
 }
