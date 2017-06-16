@@ -1,16 +1,48 @@
-<div class="jumbotron">
-  <h3>{{header}}</h3>
-  <h1>{{title}}</h1>
-  <h3><em>{{slogan}}</em></h3>
+<div id="body">
+  <div class="jumbotron">
+    <div class="sponsors">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <h4>Sponsored by:</h4>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="sponsor" src="http://www.companieshistory.com/wp-content/uploads/2013/07/Marriott.png">
+          </div>
+
+          <div class="item">
+            <img class="sponsor" src="https://i.forbesimg.com/media/lists/companies/lumber-liquidators_416x416.jpg">
+          </div>
+
+          <div class="item">
+            <img class="sponsor" src="https://i.forbesimg.com/media/lists/colleges/university-of-nebraska-at-omaha_416x416.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <h3>{{header}}</h3>
+      <h1>{{title}}</h1>
+    </div>
+  </div>
+  <nav class="navbar navbar-default">
+     <div class="container-fluid">
+       <ul class="nav navbar-nav navbar-right">
+         <li><a routerLink="">Home</a></li>
+         <li><a routerLink="about">About</a></li>
+       </ul>
+     </div>
+   </nav>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<nav class="navbar navbar-default">
-   <div class="container-fluid">
-     <ul class="nav navbar-nav navbar-right">
-       <li><a routerLink="">Home</a></li>
-       <li><a routerLink="about">About</a></li>
-     </ul>
-   </div>
- </nav>
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+<footer class="footer">
+  <div class="container">
+    <label>Email</label>
+    <input #email>
+    <label>Password</label>
+    <input type="password" #password>
+    <button class="btn btn-default" (click)="login(email.value, password.value)" routerLink="admin">Admin Login</button>
+    <button class="btn btn-default" (click)="logout()" routerLink="">Admin Logout</button>
+  </div>
+</footer>

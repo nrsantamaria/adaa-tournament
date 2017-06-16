@@ -6,11 +6,15 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { routing } from './app.routing';
+import { Observable } from 'rxjs/Observable';
+import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { TeamDetailComponent } from './team-detail/team-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +28,8 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     AboutComponent,
-    TeamDetailComponent
+    TeamDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

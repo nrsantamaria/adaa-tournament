@@ -1,12 +1,29 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [AngularFireAuth]
 })
 export class AppComponent {
   header = 'American Dodgeball Association of America'
   title = 'Championship Tournament';
-  slogan = "Just remember the five D's of dodgeball: Dodge, Duck, Dip, Dive and... Dodge."
+
+  user: Observable<firebase.User>;
+
+  constructor(public afAuth: AngularFireAuth) {
+    this.user = afAuth.authState;
+  }
+
+  login(email, password) {
+    this.afAuth.auth.signInWithEmailAndPassword(email, password);
+  }
+
+  logout() {
+    this.afAuth.auth.signOut();
+  }
 }
