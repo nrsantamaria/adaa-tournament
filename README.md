@@ -66,3 +66,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 This software is licensed under MIT license.
 
 Copyright (c) 2017 Nicole Santamaria
+
+![Home Page](src/assets/img/home.png)
+![About Page](src/assets/img/about.png)
